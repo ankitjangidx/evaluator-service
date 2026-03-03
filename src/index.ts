@@ -1,9 +1,10 @@
-import express, { Express } from "express";
-import { PORT } from "./config/server.config";
+import express from "express";
+
+import { PORT } from "./config/server.config.js";
 
 
-const app: Express = express();
 
+const app = express();
 
 app.listen(PORT, () => {
   console.log(`server is listening on: ${PORT}`);
